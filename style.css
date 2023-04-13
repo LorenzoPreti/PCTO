@@ -1,0 +1,644 @@
+:root {
+  --biancastro: rgb(249,249,246);
+  --secondario: rgb(187, 47, 47);
+  --text: rgb(14, 14, 14);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, a {
+  margin: 0;
+  text-decoration: none;
+  cursor: default;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 4vh;
+  color: var(--secondario);
+}
+
+p {
+  color: var(--text);
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--biancastro);
+}
+
+.img-title {
+  width: 40%;
+  height: 100%;
+}
+
+.img-title img {
+  height: 80%;
+  width: 30%;
+  object-fit: cover;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  z-index: 1;
+}
+
+.deco1 {
+  height: 80%;
+  width: 30%;
+  background-color: var(--secondario);
+  position: absolute;
+  right: 7.5%;
+  top: 15%;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.div-title {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navbar {
+  padding: 1vh 0 1vh 0;
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--biancastro);
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+}
+
+#navbar img {
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#menu{
+  position: fixed;
+  top: 1vh;
+  left: -10vh;
+  height: 8vh;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--text);
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+#menu img{
+  height: 50%;
+}
+
+.home {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link div {
+  height: 6vh;
+  border-radius: 3vh;
+  width: 15vw;
+  background-color: rgb(0,104,181);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home h1 {
+  font-size: 10vh;
+  color: var(--secondario);
+}
+
+.home p {
+  text-align: justify;
+  font-size: 3vh;
+  padding: 0 5vw;
+}
+
+.link div a {
+  color: var(--biancastro);
+}
+
+#Motivazioni{
+  background-color: var(--secondario);
+}
+
+.mot-img {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mot-bord{
+  height: 80%;
+  width: 90%;
+  border: 1vh solid var(--biancastro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mot-bord img {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.mot-text{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mot-text h1{
+  font-size: 10vh;
+  color: var(--biancastro);
+  padding-bottom: 10vh;
+}
+.mot-card {
+  background-color: var(--biancastro);
+  width: 80%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mot-card p {
+  text-align: justify;
+  font-size: 3vh;
+  padding: 0 5vw;
+}
+
+#Prerequisiti{
+  background-color: var(--secondario);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-tit  {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-tit h1 {
+  font-size: 10vh;
+  color: var(--biancastro);
+}
+
+.pre-con{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pre-img {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cerchio{
+  background-color: var(--biancastro);
+  height: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cerchio img{
+  height: 70%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+
+.cerchio img:hover {
+  height: 80%;
+}
+
+.pre-text{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pre-card {
+  background-color: var(--biancastro);
+  width: 25%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+.pre-text p {
+  text-align: justify;
+  font-size: 3vh;
+  padding: 0 5vw;
+}
+
+#Attività {
+  background-color: var(--biancastro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.att-tit  {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.att-tit h1 {
+  font-size: 10vh;
+  color: var(--secondario);
+}
+
+.att-con {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.att-bord {
+  border: 1vh solid var(--secondario);
+  width: 25%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.att-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+}
+
+.att-card img {
+  height: 40%;
+  width: 90%;
+  object-fit: cover;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+
+.att-cont{
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.att-ctitle {
+  font-size: 5vh;
+  color: var(--secondario);
+  margin: 0;
+}
+
+.att-des {
+  text-align: justify;
+  font-size: 3vh;
+}
+
+.work {
+  width: 100vw;
+  position: absolute;
+  top: 300vh;
+  left: -100vw;
+  z-index: 2;
+  background-color: var(--biancastro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 1s;
+}
+
+.work-tit  {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-tit h1 {
+  font-size: 10vh;
+  color: var(--secondario);
+}
+
+.work-cont {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.work-close{
+  width: 10%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.work-bord {
+  border: 1vh solid var(--secondario);
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.work-bord img {
+  height: 80%;
+  width: 90%;
+  object-fit: cover;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+
+.work-comp {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.work-comp p {
+  text-align: justify;
+  font-size: 3vh;
+  padding: 0 5vw;
+}
+
+.comp{
+  width: 80%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.close{
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--secondario);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close img {
+  position: relative;
+  height: 4vw;
+  aspect-ratio: 1;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.circ {
+  width: 10%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--secondario);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circ img {
+  position: relative;
+  height: 80%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  z-index: 2;
+}
+
+#Pro{
+  background-color: var(--secondario);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.pro-tit  {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 1s;
+}
+
+.pro-tit h1 {
+  font-size: 10vh;
+  color: var(--biancastro);
+}
+
+.pro-tit h1 span{
+  transition: all ease-in-out 1s;
+}
+
+.P:hover {
+  font-size: 15vh;
+  color: var(--text);
+}
+
+.C:hover {
+  font-size: 15vh;
+  color: var(--text);
+}
+
+#P{
+  width: 80vw;
+  height: 75vh;
+  position: absolute;
+  top: 420vh;
+  left: -80vw;
+  z-index: 2;
+  background-color: var(--biancastro);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all ease-in-out 2s;
+}
+
+.pc-bord{
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc-bord img{
+  position: relative;
+  height: 80%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.pc-text{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#C{
+  width: 80vw;
+  height: 75vh;
+  position: absolute;
+  top: 420vh;
+  right: -80vw;
+  z-index: 2;
+  background-color: var(--biancastro);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all ease-in-out 2s;
+}
+
+#not-like {
+  transform: rotate(180deg);
+}
+
+#Conclusioni{
+  background-color: var(--biancastro);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.con-img {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-bord {
+  width: 40vw;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1vh solid var(--secondario);
+}
+
+.con-bord img {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.con-text {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.con-text h1 {
+  font-size: 10vh;
+}
+
+.con-text p {
+  text-align: justify;
+  font-size: 3vh;
+  padding: 0 5vw;
+}
